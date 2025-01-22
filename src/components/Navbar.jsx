@@ -7,8 +7,8 @@ const Navbar = async () => {
 
   return (
     <div className="border-b-2">
-      <div className="flex items-center justify-between py-6  container mx-auto">
-        <div>Read Next</div>
+      <div className="flex items-center justify-between py-6 container mx-auto px-4">
+        <h1 className="font-bold text-lg">Read Next</h1>
 
         <div className="flex items-center gap-4">
           <Link href="/">Home</Link>

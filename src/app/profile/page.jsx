@@ -3,14 +3,11 @@ import { redirect } from "next/navigation";
 
 const ProfilePage = async () => {
   const { isAuthenticated, getUser } = getKindeServerSession();
-
   const user = await getUser();
 
   if (!(await isAuthenticated())) {
     redirect("/api/auth/login?post_login_redirect_url=/profile");
   }
-
-  console.log(user);
 
   return (
     <div className="text-center">
