@@ -6,7 +6,7 @@ const ProfilePage = async () => {
   const user = await getUser();
 
   if (!(await isAuthenticated())) {
-    redirect("/api/auth/login");
+    redirect("/api/auth/login?post_login_redirect_url=/profile");
   }
 
   return (
