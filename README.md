@@ -2,7 +2,20 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+1. Create a `.env` file in root directory of the project and paste the following:
+
+```bash
+KINDE_CLIENT_ID=your_kinde_id
+KINDE_CLIENT_SECRET=your_kinde_client_secret
+KINDE_ISSUER_URL=your_kinde_issuer_url
+KINDE_SITE_URL=your_kinde_site_url
+KINDE_POST_LOGOUT_REDIRECT_URL=your_kinde_post_logout_redirect_url
+KINDE_POST_LOGIN_REDIRECT_URL=your_kinde_post_login_redicrect_url
+```
+
+Replace the required Kinde credentials from your Kinde project dashboard
+
+2. First, run the development server:
 
 ```bash
 npm run dev
@@ -14,7 +27,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
