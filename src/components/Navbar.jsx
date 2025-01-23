@@ -23,7 +23,6 @@ const Navbar = async () => {
           ) : (
             <>
               <Link href="/api/auth/login">Log In</Link>
-              <Link href="/api/auth/register">Register</Link>
             </>
           )}
         </div>
